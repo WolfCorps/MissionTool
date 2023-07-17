@@ -1,0 +1,12 @@
+name = "Wolf Mission Tool";
+picture = "logo_proj_templ_ca.paa";
+actionName = "GitHub";
+action = "https://github.com/wolfcorps/WolfMissionTool";
+description = "Wolf Corps Mission Tool Mod";
+logo = "logo_proj_templ_ca.paa";
+logoOver = "logo_proj_templ_ca.paa";
+tooltip = "Wolf Mission Tool";
+tooltipOwned = "Wolf Mission Tool Owned";
+overview = "Wolf Mission Tool";
+author = "Wolf Corps";
+overviewPicture = "logo_proj_templ_ca.paa";
