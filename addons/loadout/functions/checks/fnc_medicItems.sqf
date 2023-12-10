@@ -20,7 +20,7 @@ if (_checkContext get "isMedic") then {
 	["Epinephrine", "ACE_epinephrine", 5] call _itemConditionMin;
 	["Morphine", "ACE_morphine", 5] call _itemConditionMin;
 	["Bandages", ["ACE_fieldDressing", "ACE_elasticBandage", "ACE_packingBandage", "ACE_quikclot"], 50] call _itemConditionMin;
-	["Torniquet", "ACE_tourniquet", 5] call _itemConditionMin;
+	["Torniquet", "ACE_tourniquet", 4] call _itemConditionMin;
 	["Splint", "ACE_splint", 5] call _itemConditionMin;
 
 	// Fluid in liters
