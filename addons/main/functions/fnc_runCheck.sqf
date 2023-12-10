@@ -10,7 +10,7 @@ private _formatUnit = {
 
 	if (_warnings isEqualTo []) exitWith {_text}; // Nothing here to report
 
-	_text pushBack format ["<t size='1.5'><a href='ftp://%1'>Unit %2</a></t>", get3DENEntityID _unit, name _unit];
+	_text pushBack format ["<t size='1.5'><a href='ftp://%1'>Unit %2 (%3)</a></t>", get3DENEntityID _unit, name _unit, _unit get3DENAttribute "description"];
 
 	private _warningCategories = createHashMap;
 
@@ -30,7 +30,7 @@ private _formatUnit = {
 };
 
 
-private _text = [""];
+private _text = ["Results:"];
 
 private _units = get3DENSelected "Object";
 {
