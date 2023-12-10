@@ -19,5 +19,5 @@ params ["_target"];
 
 set3DENSelected [_target];
 
-move3DENCamera [getPos _target, true];
+move3DENCamera [getPosASL _target, true];
 //#TODO look at https://community.bistudio.com/wiki/get3DENCamera
