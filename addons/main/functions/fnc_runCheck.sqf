@@ -32,7 +32,11 @@ private _formatUnit = {
 
 private _text = ["Results:"];
 
-private _units = get3DENSelected "Object";
+//private _units = get3DENSelected "Object"; // Selected objects
+private _units = all3DENEntities select 0; // All objects 
+_units = _units select {_x isKindOf "CAManBase"}; // Soldiers only 
+_units = _units select {(_x get3DENAttribute "ControlMP") select 0}; // Playable units only
+
 {
 	private _checkContext = [_x] call EFUNC(loadout,createCheckContext);
 
