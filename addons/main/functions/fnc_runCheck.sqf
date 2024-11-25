@@ -37,6 +37,9 @@ private _units = all3DENEntities select 0; // All objects
 _units = _units select {_x isKindOf "CAManBase"}; // Soldiers only 
 _units = _units select {(_x get3DENAttribute "ControlMP") select 0}; // Playable units only
 
+
+_text append (call EFUNC(main,checkMissionAttributes));
+
 {
 	private _checkContext = [_x] call EFUNC(loadout,createCheckContext);
 
